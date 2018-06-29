@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.machine.engineer.MainActivity">
+
+    <com.ycl.tabview.library.TabView
+        android:id="@+id/main_tabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_textViewSelColor="@color/colorBlue"
+        app:tab_textViewUnSelColor="@color/colorSmallTitle"
+        app:imageViewTextViewMargin="3dp"
+        app:tab_imageViewHeight="30dp"
+        app:tab_imageViewWidth="30dp"
+        app:tab_tabViewDefaultPosition="0"
+        app:tab_tabViewHeight="60dp"
+        app:tab_textViewSize="13sp">
+    </com.ycl.tabview.library.TabView>
+
+
+
+</LinearLayout>

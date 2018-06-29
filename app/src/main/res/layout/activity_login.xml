@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuye.machine.engineer.activity.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_login_bg_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="139dp"
+                android:src="@drawable/ic_pic_fail" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_logo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginBottom="2dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_login"
+            android:drawablePadding="22dp"
+            android:hint="手机号/用户名"
+            android:inputType="number"
+            android:textColor="@color/colorMiddleTitle"
+            android:textColorHint="@color/colorSmallTitle"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/edt_login_username"
+            android:background="@color/colorSmallTitle" />
+
+
+        <EditText
+            android:id="@+id/edt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_psd"
+            android:drawablePadding="24dp"
+            android:hint="请输入密码"
+            android:password="true"
+            android:textColor="@color/colorMiddleTitle"
+            android:textColorHint="@color/colorSmallTitle"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorSmallTitle" />
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="忘记密码"
+                android:textColor="@color/colorBlue"
+                android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape_login_btn_background"
+            android:text="登录"
+            android:textColor="@color/colorWrite"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_register_btn_orange"
+            android:text="注册"
+            android:textColor="@color/colorWrite"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_login_bg_bottom"/>
+</RelativeLayout>

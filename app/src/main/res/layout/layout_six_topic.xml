@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_use_topic_img"
+        android:layout_width="165dp"
+        android:layout_height="93dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_defult" />
+
+    <TextView
+        android:id="@+id/tv_use_count"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWrite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_use_topic_name"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/iv_use_topic_img"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="引用的话题名称"
+        android:textColor="@color/colorMiddleTitle"
+        android:textSize="14sp" />
+</RelativeLayout>

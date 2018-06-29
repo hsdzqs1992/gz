@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">engineer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="telNotNull">手机号码不能为空</string>
+    <string name="tel_error">手机号码格式有误</string>
+    <string name="user_name">请输入手机号码</string>
+    <string name="psd">请输入密码</string>
+    <string name="code_error">验证码有误，请输入正确的验证码</string>
+    <string name="token_invaild">登录失效，请重新登录</string>
+    <string name="psd_no_same">密码不一致，请重新输入</string>
+    <string name="fa_tel_num">请输入联系方式</string>
+    <string name="fa_tel_user">请输入联系人</string>
+    <string name="fa_job_time">请选择工作时间</string>
+    <string name="fa_title">请输入标题</string>
+</resources>

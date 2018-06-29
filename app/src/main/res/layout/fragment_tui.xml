@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    android:orientation="vertical"
+    tools:context="com.zhuye.machine.engineer.homefragment.TuiFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_search_content"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_search_bg"
+                android:drawableLeft="@drawable/ic_search_gray"
+                android:drawablePadding="10dp"
+                android:hint="搜索"
+                android:paddingLeft="15dp"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.zhuye.machine.engineer.widget.MyAdGallery
+                    android:id="@+id/banner_tui"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"></com.zhuye.machine.engineer.widget.MyAdGallery>
+
+                <LinearLayout
+                    android:id="@+id/ovalLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_alignBottom="@+id/banner_tui"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorGetCode"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_sign"
+                    android:layout_width="0dp"
+                    android:layout_height="73dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/mian_sign" />
+
+                <ImageView
+                    android:id="@+id/iv_topic"
+                    android:layout_width="0dp"
+                    android:layout_height="73dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/main_topic" />
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tui_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                app:tabIndicatorColor="@color/colorBlue"
+                app:tabIndicatorHeight="1dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorBlue"
+                app:tabTextAppearance="@style/LunTabLayoutHome"
+                app:tabTextColor="@color/colorSmallTitle"></android.support.design.widget.TabLayout>
+
+            <com.zhuye.machine.engineer.widget.ChildViewPager
+                android:id="@+id/tui_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.zhuye.machine.engineer.widget.ChildViewPager>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    tools:context="com.zhuye.machine.engineer.activity.home.EditfindJobActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_dai"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/iv_find_job_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="编辑求职"
+            android:textColor="@color/colorWrite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_find_job_fa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="发布"
+            android:textColor="@color/colorWrite"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_title_dai"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorView" />
+
+        <EditText
+            android:id="@+id/edt_find_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="请输入标题（4 - 30字）"
+            android:maxLength="30"
+            android:text=""
+            android:textColor="@color/colorMiddleTitle"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorView" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="工作年限"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_find_job_time"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_spiner"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="一年"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_spinner" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="职位"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_find_job_zhi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="职位"
+                android:src="@drawable/ic_right"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="期望薪资"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_find_job_salary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="薪资"
+                android:inputType="number"
+                android:src="@drawable/ic_right"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="期望区域"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_job_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_job_region"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="7dp"
+                android:src="@drawable/ic_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="自我描述"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edt_fian_job_jinyan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_spiner"
+            android:hint="自我描述"
+            android:padding="5dp"
+            android:textColor="@color/colorMiddleTitle"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorView" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="联系人"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/iv_dai_tel_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="联系人"
+                android:src="@drawable/ic_right"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="联系方式"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/iv_dai_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="联系电话"
+                android:inputType="number"
+                android:src="@drawable/ic_right"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorView"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_dai_add_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_add_blue"
+            android:text="同步到部落"
+            android:textColor="@color/colorMiddleTitle"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

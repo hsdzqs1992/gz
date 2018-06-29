@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    tools:context="com.zhuye.machine.engineer.activity.home.EditRentActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_rent"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/iv_rent_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="编辑出租"
+            android:textColor="@color/colorWrite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_rent_fa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="发布"
+            android:textColor="@color/colorWrite"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title_rent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorView" />
+
+            <EditText
+                android:id="@+id/edt_rent_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="请输入标题（4 - 30字）"
+                android:maxLength="30"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="请选择品牌"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_brand_type"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="请选择型号"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/tv_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/iv_model"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="请选择类型"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/tv_model_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_type"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="生产年份"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_rent_time"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_spiner"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="2018年"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_spinner" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="小时数"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_rent_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="小时数"
+                    android:inputType="number"
+                    android:src="@drawable/ic_right"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="租金"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_rent_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:checkedButton="@+id/no_re"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_day_money"
+                        style="@style/RadioButtonStyles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="5dp"
+                        android:text="天"
+                        android:textColor="@color/colorMiddleTitle"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mouth_money"
+                        style="@style/RadioButtonStyles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="3dp"
+                        android:text="月"
+                        android:textColor="@color/colorMiddleTitle"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_discuss_money"
+                        style="@style/RadioButtonStyles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="3dp"
+                        android:text="面议"
+                        android:textColor="@color/colorMiddleTitle"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_rent_money"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="租金"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="租期"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_rent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:checkedButton="@+id/no_re"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_day"
+                        style="@style/RadioButtonStyles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="5dp"
+                        android:text="天"
+                        android:textColor="@color/colorMiddleTitle"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mouth"
+                        style="@style/RadioButtonStyles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="3dp"
+                        android:text="月"
+                        android:textColor="@color/colorMiddleTitle"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_rent_time"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="租期"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="所在地"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_rent_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_rent_address"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="具体描述"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_rent_dec_detail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="具体描述"
+                android:padding="5dp"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="添加图片（最多6张）" />
+
+            <LinearLayout
+                android:id="@+id/layout_pics"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/iv_add_pic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_add" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="联系人"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_advertise_tel_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="联系人"
+                    android:inputType="number"
+                    android:src="@drawable/ic_right"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="联系方式"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_advertise_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="联系电话"
+                    android:inputType="number"
+                    android:src="@drawable/ic_right"
+                    android:textColor="@color/colorMiddleTitle"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorView"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_dai_add_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_add_blue"
+            android:text="同步到部落"
+            android:textColor="@color/colorMiddleTitle"
+            android:textSize="12sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_dai_address"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:drawableRight="@drawable/ic_loc_blue"-->
+        <!--android:text="所在城市"-->
+        <!--android:textColor="@color/colorMiddleTitle"-->
+        <!--android:textSize="12sp" />-->
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.machine.engineer.activity.mine.BindNumActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_bind"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/iv_bind_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="绑定手机号"
+            android:textColor="@color/colorWrite"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_bind_num"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_bind"
+        android:layout_centerVertical="true"
+        android:background="@color/colorWrite"
+        android:hint="请输入新手机号"
+        android:inputType="number"
+        android:textColor="@color/colorMiddleTitle"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/edt_bind_num"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <EditText
+            android:id="@+id/edt_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textColor="@color/colorMiddleTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="发送验证码"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_bind_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        android:text="确认绑定"
+        android:textColor="@color/colorWrite"
+        android:textSize="15sp" />
+</RelativeLayout>

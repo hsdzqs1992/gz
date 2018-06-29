@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.machine.engineer.mainfragment.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/tile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_loc_write"
+            android:drawablePadding="5dp"
+            android:text="郑州市"
+            android:textColor="@color/colorWrite"
+            android:textSize="14sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_tuijian"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="推荐"-->
+            <!--android:textColor="@color/colorOrange"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_attention"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="关注"-->
+            <!--android:textColor="@color/colorWrite"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_now"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="此刻"-->
+            <!--android:textColor="@color/colorWrite"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_group"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="部落"-->
+            <!--android:textColor="@color/colorWrite"-->
+            <!--android:textSize="15sp" />-->
+        <android.support.design.widget.TabLayout
+        android:id="@+id/home_tab_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:tabIndicatorColor="@color/colorBlue"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorOrange"
+        app:tabTextAppearance="@style/LunTabLayoutHome"
+        app:tabTextColor="@color/colorWrite"></android.support.design.widget.TabLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/home_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tile"
+        android:background="@color/colorWrite"></android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/btn_fabu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/mian_btn" />
+</RelativeLayout>

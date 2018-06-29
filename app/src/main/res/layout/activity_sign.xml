@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuye.machine.engineer.activity.home.SignActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_dong"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/iv_sign_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="签到"
+            android:textColor="@color/colorWrite"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shape_sign_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="签到"
+                android:textSize="20sp"
+                android:textColor="@color/colorWrite" />
+
+            <TextView
+                android:id="@+id/tv_cur_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="当前日期"
+                android:textSize="15sp"
+                android:textColor="@color/colorWrite" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_signed_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="已连续签到几天"
+        android:textColor="@color/colorOrange"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/sign_calendar_card_left_iv"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:background="@drawable/button_default_press_style"/>-->
+
+            <TextView
+                android:id="@+id/sign_calendar_card_current_day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="2018年5月"
+                android:textColor="@color/colorMiddleTitle"
+                android:textSize="16sp" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/sign_calendar_card_right_iv"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:src="@mipmap/right_next_mounth_img"-->
+            <!--android:background="@drawable/button_default_press_style"/>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="@color/colorSmallTitle"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.zhuye.machine.engineer.activity.home.calendar.CalendarCardView
+        android:id="@+id/sign_calendar"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
